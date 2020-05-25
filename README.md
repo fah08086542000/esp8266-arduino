@@ -6,5 +6,3 @@
  arduino nano or any board
  passwords dictionary(Don't provide)
  C# UI interface(provide code)
- 
-asasasas 
