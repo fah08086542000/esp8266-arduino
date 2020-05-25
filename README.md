@@ -1,4 +1,9 @@
 # interesting-arduino
 
-just put some my study
-about arduino single module test or integration module
+ here will show how use esp8266 and some default password to connect wifi
+ you need:
+ esp8266 * 1
+ arduino nano or any board
+ passwords dictionary(Don't provide)
+ C# UI interface(provide code)
+ 
