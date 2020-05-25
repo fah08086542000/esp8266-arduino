@@ -1,6 +1,6 @@
 # interesting-arduino
 
- 這裡將告訴你如何使用esp8266和使用密碼字典藉由C# UI自動下AT commands
+ 這裡將告訴你如何使用esp8266和使用密碼字典藉由C# UI自動下AT commandsH9 猜測密碼
  
  你需要:
  
@@ -16,4 +16,6 @@ arduino code (Software serial from example)
 
 開始:
 
-Software serial
+1.SoftwareSerialExample 燒入到arduino
+
+2.
