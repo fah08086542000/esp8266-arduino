@@ -2,7 +2,7 @@
 
  here will show how use esp8266 and some default password to connect wifi
  
- you need:
+ 你需要:
  
  esp8266 * 1
  
