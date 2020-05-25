@@ -1,6 +1,6 @@
 # interesting-arduino
 
- here will show how use esp8266 and some default password to connect wifi
+ 這裡將告訴你如何使用esp8266和使用密碼字典藉由C# UI自動下AT commands
  
  你需要:
  
@@ -8,11 +8,12 @@
  
  arduino nano or any board
  
- passwords dictionary(Don't provide)
+ 密碼字典(不會做提供)
  
- C# UI interface(provide code)
+ C# UI (主控台應用程式，有提供程式)
 
 arduino code (Software serial from example)
 
-start:
+開始:
 
+Software serial
