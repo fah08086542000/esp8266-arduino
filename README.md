@@ -11,3 +11,8 @@
  passwords dictionary(Don't provide)
  
  C# UI interface(provide code)
+
+arduino code (Software serial from example)
+
+start:
+
