@@ -23,9 +23,15 @@ namespace ConsoleApp5
             {
                 Console.WriteLine("Find port:{0}", port_number);
             }
-            find_port();
+            choose_port();
         }
-        static void find_port()
+        /*
+            choose your Serial port Ex:com1、com2
+            also choose mode 
+            1--AT commands
+            2--start log in ssid and password
+        */
+        static void choose_port()
         {
             Console.WriteLine("choose port");
             port = new SerialPort(Console.ReadLine(), 9600, Parity.None, 8, StopBits.One);
@@ -51,6 +57,10 @@ namespace ConsoleApp5
                             Console.WriteLine(cwjap);
                             port.Write(cwjap + "\r\n");
                             Thread.Sleep(16000);
+                            /*
+                                test time from entre AT+CWJAP to return "OK" or "ERROR" need about 15000ms~16000ms 
+                                if time not enought it will return "busy p......"
+                            */
                             cmd_str = port.ReadExisting();
                             if (cmd_str.Contains("OK"))
                             {
@@ -63,6 +73,11 @@ namespace ConsoleApp5
                     break;
             }
         }
+        /*
+            here just like arduino Serial Monitor
+            
+            when it's in the AT cmd mode,you can enter "AT EXIT" and return for exit at comnmands mode
+        */
         static void AT_cmd()
         {
             String atcmd_string;
@@ -80,6 +95,10 @@ namespace ConsoleApp5
             port.Close();
             find_port();
         }
+        /*
+            here will erter AT commends :AT+CWLAP (find wifi near here)
+            and it will return the ssid near here
+        */
         static List<string> SSID_anme()
         {
             string[] condition = new string[1] { "+CWLAP:(" },str1;
